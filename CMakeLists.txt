@@ -22,6 +22,11 @@ ament_auto_add_executable(dummy_pointcloud_publisher
   src/dummy_pointcloud_publisher.cpp
 )
 
+ament_auto_add_executable(pcl_lis
+  src/pcl_lis.cpp
+)
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
